@@ -20,7 +20,7 @@ router.delete("/:id", deleteTask);
 
 // Route to get all tasks with optional filtering
 router.get("/", (req, res) => {
-  const filter = req.query.filter; // Get filter parameter from query string
+  const filter = req.query.filter; // Get filter parameter from query
   getAllTasks(req, res, filter); // Pass filter parameter to controller method
 });
 

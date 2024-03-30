@@ -5,6 +5,7 @@ const addProject = async (req, res) => {
     const { name } = req.body;
     const project = new Project({ name });
     await project.save();
+
     res.json(project);
     console.log("Project Added");
   } catch (err) {

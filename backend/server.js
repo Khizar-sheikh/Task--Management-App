@@ -14,6 +14,7 @@ app.use(cors());
 app.use(express.json());
 
 app.use("/api/projects", projectsRoutes);
+
 app.use("/api/tasks", tasksRoutes);
 
 app.use(errorHandler);

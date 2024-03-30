@@ -11,7 +11,7 @@ const {
 
 // Route to add a new project
 router.post("/", (req, res) => {
-  console.log("Received project data:", req.body); // Log received project data
+  console.log("Received project data:", req.body);
   addProject(req, res);
 });
 
